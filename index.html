@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>MMM Rezerve</title>
+</head>
+<body> 
+  <div class="container" style="margin-top: 1em;"> 
+   <!-- Can change div to flexbox or float -->
+    <h1 id="page_title">MMM Rezerve</h1>
+    <form action="" method = "post" class="section_title">
+      {% csrf_token %}
+      <h2>
+        Login
+      </h2>
+      {{ form.as_p }}
+      <br><br>
+      <input type="submit" value="Login">
+    </form>
+    <div class="ind_box" class="section_title" id="announcement">
+      <h2>
+        Announcement
+      </h2>
+      <article>
+        <h3>
+          Entry 1 Title
+        </h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin aliquam, elit eget imperdiet sagittis, arcu purus gravida quam, nec laoreet lorem lacus nec odio. Donec vitae ante in urna venenatis bibendum ut nec quam. Nulla facilisi. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nullam lobortis efficitur arcu ut bibendum. Ut nec purus nibh. In dictum lorem sed porta pulvinar. Maecenas viverra sapien eleifend posuere placerat. Suspendisse ut dolor sem. Nunc ultricies a eros vitae vulputate. Nunc rutrum ante sed malesuada condimentum. Nullam pharetra metus non metus volutpat, ut dictum augue dapibus. Maecenas eget facilisis nulla, in pulvinar dui. Sed mollis nec elit quis porta. In hac habitasse platea dictumst. Nulla facilisi.
+        </p>
+      </article>
+      <article>
+        <h3>
+          Entry 2 Title
+        </h3>
+        <p>
+          Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec condimentum pretium arcu sed pellentesque. Mauris sodales molestie pellentesque. Nulla nec dui blandit, tristique lorem at, cursus risus. Aliquam gravida libero sit amet eros volutpat blandit. Nunc ut metus sed quam placerat aliquet. Donec ut erat nec ante hendrerit vehicula sed porta arcu. Praesent accumsan felis non lectus sollicitudin, in aliquet nisl tincidunt. Morbi ut dolor ipsum. Nunc eget metus elit.
+        </p>
+      </article>
+    </div>
+
+    <div class="ind_box" class="section_title" id="extra">
+      <h2>
+        Extra Box
+      </h2>
+    </div>
+  </body>
+</html> 
